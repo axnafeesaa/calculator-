@@ -1,0 +1,24 @@
+def log_calculation(expression, result):
+    with open("calc_log.txt", "a") as f:
+        f.write(f"{expression} = {result}\n")
+
+def calculator():
+    print("Simple Calculator with Logging")
+    print("Enter 'exit' to quit.")
+    
+    while True:
+        expr = input("Enter calculation (e.g. 3 + 4): ")
+        if expr.lower() == "exit":
+            print("Goodbye!")
+            break
+        
+        try:
+            # Evaluate the expression safely
+            result = eval(expr, {"__builtins__":None}, {})
+            print("Result:", result)
+            log_calculation(expr, result)
+        except Exception as e:
+            print("Error:", e)
+
+if __name__ == "__main__":
+    calculator()
