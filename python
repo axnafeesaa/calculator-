@@ -32,3 +32,10 @@ How it works:
 3 + 4 = 7
 
 4) Enter exit to quit the program.
+
+The objective of this calculator project is to design and implement a simple yet functional
+calculator that allows users to perform basic arithmetic operations, while reinforcing core programming skills, 
+input validation, error handling, and optional logging of results. 
+This project also serves as an introduction to collaborative software development using GitHub.
+
+
